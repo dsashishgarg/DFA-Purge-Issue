@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    }
+  },
+  "extensions": {
+    "durableTask": {
+      "hubName": "TaskHub",
+      "storageProvider": {
+        "connectionStringName": "AzureWebJobsStorage",
+        "maxQueuePolling Interval": "00:00:05"
+      }
+    },
+    "http": {
+      "routePrefix": ""
+    }
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[2.*, 3.0.0)"
+  }
+}
