@@ -13,7 +13,7 @@
       "hubName": "TaskHub",
       "storageProvider": {
         "connectionStringName": "AzureWebJobsStorage",
-        "maxQueuePolling Interval": "00:00:05"
+        "maxQueuePollingInterval": "00:00:05"
       }
     },
     "http": {

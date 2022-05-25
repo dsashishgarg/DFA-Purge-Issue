@@ -8,6 +8,18 @@
       }
     }
   },
+  "extensions": {
+    "durableTask": {
+      "hubName": "TaskHub",
+      "storageProvider": {
+        "connectionStringName": "AzureWebJobsStorage",
+        "maxQueuePollingInterval": "00:00:05"
+      }
+    },
+    "http": {
+      "routePrefix": ""
+    }
+  },
   "extensionBundle": {
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[2.*, 3.0.0)"
